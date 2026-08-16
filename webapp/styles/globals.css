@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f9f9f7;
+  color: #0b0b0b;
+}
+.page { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
+.page.wide { max-width: 900px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+.subtitle { color: #52514e; font-size: 14px; margin: 0 0 28px; }
+.card { background: #fcfcfb; border: 1px solid rgba(11,11,11,0.10); border-radius: 12px; padding: 24px; }
+label { display: block; font-size: 13px; font-weight: 500; margin: 16px 0 6px; }
+label.first { margin-top: 0; }
+.hint { font-size: 12px; color: #898781; margin-top: 4px; }
+input[type=text], input[type=password], input[type=number], input[type=date] {
+  width: 100%; padding: 10px 12px; border: 1px solid rgba(11,11,11,0.15); border-radius: 8px;
+  font-size: 14px; font-family: inherit;
+}
+input:focus { outline: 2px solid #2a78d6; outline-offset: 1px; }
+button.primary {
+  margin-top: 24px; width: 100%; padding: 12px 16px; border: none; border-radius: 8px;
+  background: #2a78d6; color: #fff; font-size: 15px; font-weight: 600; cursor: pointer;
+}
+button.primary:hover { background: #1c5cab; }
+button.primary:disabled { background: #c3c2b7; cursor: not-allowed; }
+button.secondary {
+  padding: 8px 14px; border: 1px solid rgba(11,11,11,0.15); border-radius: 8px; background: #fff;
+  font-size: 13px; cursor: pointer; color: #52514e;
+}
+.error { color: #d03b3b; font-size: 13px; margin-top: 10px; }
+.section-title { font-size: 13px; font-weight: 600; color: #898781; text-transform: uppercase; letter-spacing: 0.03em; margin: 28px 0 4px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.status-box { text-align: center; padding: 60px 24px; }
+.spinner { width: 32px; height: 32px; border: 3px solid #e1e0d9; border-top-color: #2a78d6; border-radius: 50%; margin: 0 auto 16px; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.result-actions { display: flex; gap: 10px; margin-bottom: 16px; }
+iframe.dashboard-preview { width: 100%; height: 80vh; border: 1px solid rgba(11,11,11,0.10); border-radius: 10px; background: #fff; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
